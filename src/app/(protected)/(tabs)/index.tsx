@@ -11,9 +11,15 @@ export default function HomeScreen() {
         <PostListItem post = {item}/>
       )}
       ListHeaderComponent={()=>(
-        <Link href='/new' className='text-blue-500 p-4 text-3xl text-center'>
-          New Post
-        </Link>
+        <>
+          <Link href='/new' className='text-blue-500 p-4 text-3xl text-center'>
+            New Post
+          </Link>
+          <Link href='/login' className='text-blue-500 p-4 text-3xl text-center'>
+            Login
+          </Link>
+        </>
+        
       )}
     />
   );
